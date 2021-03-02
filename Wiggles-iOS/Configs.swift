@@ -13,3 +13,4 @@ let APP_LINK = "https://github.com/sameersyd/Wiggles-iOS"
 
 // IMAGE_ICON NAMES
 let IMAGE_FAV_ICON = "fav_icon"
+let IMAGE_LOC_ICON = "loc_icon"

@@ -26,12 +26,53 @@ struct HomeView: View {
                         Text("Nearby results").modifier(SailecFont(.bold, size: 14))
                             .foregroundColor(Color.text_primary_color)
                             .padding(.top, 24).padding(.bottom, 8)
+                        HomeListModelView()
                     }
                 }
                 .padding(.horizontal, 16).padding(.top, 1)
                 .navigationBarHidden(true)
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
+    }
+}
+
+struct HomeListModelView: View {
+    var body: some View {
+        HStack(spacing: 12) {
+            Image("dog_blue")
+                .resizable().scaledToFill()
+                .frame(width: 100, height: 100).cornerRadius(16)
+            VStack(alignment: .leading, spacing: 12) {
+                Text("Parkinson").modifier(SailecFont(.medium, size: 20))
+                Text("2 yrs | Playful").modifier(SailecFont(.regular, size: 14))
+                HStack(alignment: .center) {
+                    Image(IMAGE_LOC_ICON).resizable().frame(width: 24, height: 24)
+                    Text("381m away").modifier(SailecFont(.regular, size: 14))
+                }
+            }
+            Spacer()
+            VStack(alignment: .trailing) {
+                GenderView(isMale: true)
+                Spacer()
+                Text("12 min ago").modifier(SailecFont(.regular, size: 12))
+                    .foregroundColor(Color.text_primary_color)
+            }.padding(.vertical, 4)
+        }
+        .padding(16)
+        .background(Color.secondary_color)
+        .cornerRadius(16)
+    }
+}
+
+struct GenderView: View {
+    var isMale: Bool
+    var body: some View {
+        Text(isMale ? "Male" : "Female").modifier(SailecFont(.regular, size: 12))
+            .foregroundColor(isMale ? Color.blue_color : Color.red_color)
+            .padding(.horizontal, 18).padding(.vertical, 8)
+            .background(isMale ? Color.blue_color_trans : Color.red_color_trans)
+            .cornerRadius(12)
     }
 }
 
