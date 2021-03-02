@@ -11,6 +11,14 @@
 		73CEC9E625EE0A8F008362CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CEC9E525EE0A8F008362CE /* ContentView.swift */; };
 		73CEC9E825EE0A92008362CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73CEC9E725EE0A92008362CE /* Assets.xcassets */; };
 		73CEC9EB25EE0A92008362CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73CEC9EA25EE0A92008362CE /* Preview Assets.xcassets */; };
+		73CEC9F525EE0B0A008362CE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CEC9F425EE0B0A008362CE /* ColorExtension.swift */; };
+		73CEC9F825EE13BD008362CE /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CEC9F725EE13BD008362CE /* Models.swift */; };
+		73CEC9FB25EE1416008362CE /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CEC9FA25EE1416008362CE /* Configs.swift */; };
+		73CEC9FE25EE15D0008362CE /* SailecFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CEC9FD25EE15D0008362CE /* SailecFontModifier.swift */; };
+		73CECA1525EE1F2A008362CE /* Sailec-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73CECA1225EE1A28008362CE /* Sailec-Bold.ttf */; };
+		73CECA1725EE1F2C008362CE /* Sailec-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73CECA1125EE1A28008362CE /* Sailec-Medium.ttf */; };
+		73CECA1825EE1F30008362CE /* Sailec.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73CECA1325EE1A28008362CE /* Sailec.ttf */; };
+		73CECA1C25EE1FE1008362CE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CECA1B25EE1FE1008362CE /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		73CEC9E725EE0A92008362CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73CEC9EA25EE0A92008362CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73CEC9EC25EE0A92008362CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73CEC9F425EE0B0A008362CE /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		73CEC9F725EE13BD008362CE /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		73CEC9FA25EE1416008362CE /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		73CEC9FD25EE15D0008362CE /* SailecFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SailecFontModifier.swift; sourceTree = "<group>"; };
+		73CECA1125EE1A28008362CE /* Sailec-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailec-Medium.ttf"; sourceTree = "<group>"; };
+		73CECA1225EE1A28008362CE /* Sailec-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailec-Bold.ttf"; sourceTree = "<group>"; };
+		73CECA1325EE1A28008362CE /* Sailec.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sailec.ttf; sourceTree = "<group>"; };
+		73CECA1B25EE1FE1008362CE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +68,15 @@
 		73CEC9E225EE0A8F008362CE /* Wiggles-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				73CECA1A25EE1FD0008362CE /* Home */,
+				73CECA0025EE15D8008362CE /* sailec */,
+				73CEC9F325EE0AD2008362CE /* Helpers */,
 				73CEC9E325EE0A8F008362CE /* Wiggles_iOSApp.swift */,
 				73CEC9E525EE0A8F008362CE /* ContentView.swift */,
 				73CEC9E725EE0A92008362CE /* Assets.xcassets */,
 				73CEC9EC25EE0A92008362CE /* Info.plist */,
 				73CEC9E925EE0A92008362CE /* Preview Content */,
+				73CEC9FA25EE1416008362CE /* Configs.swift */,
 			);
 			path = "Wiggles-iOS";
 			sourceTree = "<group>";
@@ -67,6 +87,34 @@
 				73CEC9EA25EE0A92008362CE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		73CEC9F325EE0AD2008362CE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				73CEC9F425EE0B0A008362CE /* ColorExtension.swift */,
+				73CEC9F725EE13BD008362CE /* Models.swift */,
+				73CEC9FD25EE15D0008362CE /* SailecFontModifier.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		73CECA0025EE15D8008362CE /* sailec */ = {
+			isa = PBXGroup;
+			children = (
+				73CECA1225EE1A28008362CE /* Sailec-Bold.ttf */,
+				73CECA1125EE1A28008362CE /* Sailec-Medium.ttf */,
+				73CECA1325EE1A28008362CE /* Sailec.ttf */,
+			);
+			path = sailec;
+			sourceTree = "<group>";
+		};
+		73CECA1A25EE1FD0008362CE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				73CECA1B25EE1FE1008362CE /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +174,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73CECA1725EE1F2C008362CE /* Sailec-Medium.ttf in Resources */,
+				73CECA1525EE1F2A008362CE /* Sailec-Bold.ttf in Resources */,
 				73CEC9EB25EE0A92008362CE /* Preview Assets.xcassets in Resources */,
+				73CECA1825EE1F30008362CE /* Sailec.ttf in Resources */,
 				73CEC9E825EE0A92008362CE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73CEC9FE25EE15D0008362CE /* SailecFontModifier.swift in Sources */,
+				73CECA1C25EE1FE1008362CE /* HomeView.swift in Sources */,
+				73CEC9FB25EE1416008362CE /* Configs.swift in Sources */,
+				73CEC9F525EE0B0A008362CE /* ColorExtension.swift in Sources */,
 				73CEC9E625EE0A8F008362CE /* ContentView.swift in Sources */,
 				73CEC9E425EE0A8F008362CE /* Wiggles_iOSApp.swift in Sources */,
+				73CEC9F825EE13BD008362CE /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
