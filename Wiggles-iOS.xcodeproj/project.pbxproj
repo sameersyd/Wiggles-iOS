@@ -24,6 +24,7 @@
 		73CECA2C25EE31B8008362CE /* OwnerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CECA2B25EE31B8008362CE /* OwnerModel.swift */; };
 		73CECA3025EE3A76008362CE /* DogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CECA2F25EE3A76008362CE /* DogData.swift */; };
 		73CECA3525EE416C008362CE /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CECA3425EE416C008362CE /* DetailsView.swift */; };
+		73E4B4D925EE75B10020C282 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4B4D825EE75B10020C282 /* DetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		73CECA2B25EE31B8008362CE /* OwnerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerModel.swift; sourceTree = "<group>"; };
 		73CECA2F25EE3A76008362CE /* DogData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogData.swift; sourceTree = "<group>"; };
 		73CECA3425EE416C008362CE /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		73E4B4D825EE75B10020C282 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				73CECA3425EE416C008362CE /* DetailsView.swift */,
+				73E4B4D825EE75B10020C282 /* DetailsViewModel.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				73CECA2C25EE31B8008362CE /* OwnerModel.swift in Sources */,
 				73CECA1C25EE1FE1008362CE /* HomeView.swift in Sources */,
 				73CEC9FB25EE1416008362CE /* Configs.swift in Sources */,
+				73E4B4D925EE75B10020C282 /* DetailsViewModel.swift in Sources */,
 				73CECA2125EE304E008362CE /* HomeViewModel.swift in Sources */,
 				73CECA3525EE416C008362CE /* DetailsView.swift in Sources */,
 				73CEC9F525EE0B0A008362CE /* ColorExtension.swift in Sources */,

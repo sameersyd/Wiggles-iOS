@@ -29,10 +29,10 @@ struct HomeView: View {
                         Text("Nearby results").modifier(SailecFont(.bold, size: 14))
                             .foregroundColor(Color.text_primary_color)
                             .padding(.top, 24).padding(.bottom, 8)
-                        ForEach(viewModel.dogsList) { object in
-                            NavigationLink(destination: DetailsView(), label: {
-                                HomeListModelView(image: object.image, name: object.name, age: object.age,
-                                                  about: object.about, location: object.location, gender: object.gender).padding(.bottom, 4)
+                        ForEach(viewModel.dogsList) { model in
+                            NavigationLink(destination: DetailsView(model: model), label: {
+                                HomeListModelView(image: model.image, name: model.name, age: model.age,
+                                                  about: model.about, location: model.location, gender: model.gender).padding(.bottom, 4)
                             })
                         }
                     }
