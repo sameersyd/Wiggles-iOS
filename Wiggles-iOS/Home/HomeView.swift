@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @ObservedObject var viewModel = HomeViewModel()
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -18,7 +21,7 @@ struct HomeView: View {
                             VStack(alignment: .leading) {
                                 Text("Hey Sameer,").modifier(SailecFont(.bold, size: 24))
                                     .foregroundColor(Color.text_primary_color).padding(.top, 16)
-                                Text("Adopt a new near you!").modifier(SailecFont(.regular, size: 18))
+                                Text("Adopt a new friend near you!").modifier(SailecFont(.regular, size: 18))
                                     .foregroundColor(Color.text_primary_color).padding(.top, 4)
                             }
                             Spacer()
@@ -26,8 +29,15 @@ struct HomeView: View {
                         Text("Nearby results").modifier(SailecFont(.bold, size: 14))
                             .foregroundColor(Color.text_primary_color)
                             .padding(.top, 24).padding(.bottom, 8)
-                        HomeListModelView()
+                        ForEach(viewModel.dogsList) { object in
+                            NavigationLink(destination: HomeView(), label: {
+                                HomeListModelView(image: object.image, name: object.name, age: object.age,
+                                                  about: object.about, location: object.location, gender: object.gender)
+                            })
+                        }
                     }
+                    Spacer()
+                    Spacer().frame(height: 150)
                 }
                 .padding(.horizontal, 16).padding(.top, 1)
                 .navigationBarHidden(true)
@@ -38,22 +48,26 @@ struct HomeView: View {
 }
 
 struct HomeListModelView: View {
+    
+    var image: String, name: String, age: Int, about: String, location: String, gender: String
+    
     var body: some View {
         HStack(spacing: 12) {
-            Image("dog_blue")
+            Image(image)
                 .resizable().scaledToFill()
                 .frame(width: 100, height: 100).cornerRadius(16)
             VStack(alignment: .leading, spacing: 12) {
-                Text("Parkinson").modifier(SailecFont(.medium, size: 20))
-                Text("2 yrs | Playful").modifier(SailecFont(.regular, size: 14))
-                HStack(alignment: .center) {
+                Text(name).lineLimit(1).modifier(SailecFont(.medium, size: 20)).foregroundColor(Color.text_primary_color)
+                Text("\(age) yrs | \(about)").lineLimit(1).modifier(SailecFont(.regular, size: 14)).foregroundColor(Color.text_primary_color)
+                HStack(alignment: .center, spacing: 2) {
                     Image(IMAGE_LOC_ICON).resizable().frame(width: 24, height: 24)
-                    Text("381m away").modifier(SailecFont(.regular, size: 14))
+                    Text("\(location) away").modifier(SailecFont(.regular, size: 14))
+                        .foregroundColor(Color.text_primary_color).padding(.top, 2)
                 }
             }
             Spacer()
             VStack(alignment: .trailing) {
-                GenderView(isMale: true)
+                GenderView(isMale: gender == "male")
                 Spacer()
                 Text("12 min ago").modifier(SailecFont(.regular, size: 12))
                     .foregroundColor(Color.text_primary_color)

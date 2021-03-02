@@ -19,6 +19,10 @@
 		73CECA1725EE1F2C008362CE /* Sailec-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73CECA1125EE1A28008362CE /* Sailec-Medium.ttf */; };
 		73CECA1825EE1F30008362CE /* Sailec.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73CECA1325EE1A28008362CE /* Sailec.ttf */; };
 		73CECA1C25EE1FE1008362CE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CECA1B25EE1FE1008362CE /* HomeView.swift */; };
+		73CECA2125EE304E008362CE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CECA2025EE304E008362CE /* HomeViewModel.swift */; };
+		73CECA2925EE316F008362CE /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CECA2825EE316F008362CE /* DogModel.swift */; };
+		73CECA2C25EE31B8008362CE /* OwnerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CECA2B25EE31B8008362CE /* OwnerModel.swift */; };
+		73CECA3025EE3A76008362CE /* DogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CECA2F25EE3A76008362CE /* DogData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		73CECA1225EE1A28008362CE /* Sailec-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailec-Bold.ttf"; sourceTree = "<group>"; };
 		73CECA1325EE1A28008362CE /* Sailec.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sailec.ttf; sourceTree = "<group>"; };
 		73CECA1B25EE1FE1008362CE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		73CECA2025EE304E008362CE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		73CECA2825EE316F008362CE /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
+		73CECA2B25EE31B8008362CE /* OwnerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerModel.swift; sourceTree = "<group>"; };
+		73CECA2F25EE3A76008362CE /* DogData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,8 @@
 		73CEC9E225EE0A8F008362CE /* Wiggles-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				73CECA2E25EE3A5D008362CE /* Data */,
+				73CECA2725EE3154008362CE /* Model */,
 				73CECA1A25EE1FD0008362CE /* Home */,
 				73CECA0025EE15D8008362CE /* sailec */,
 				73CEC9F325EE0AD2008362CE /* Helpers */,
@@ -113,8 +123,26 @@
 			isa = PBXGroup;
 			children = (
 				73CECA1B25EE1FE1008362CE /* HomeView.swift */,
+				73CECA2025EE304E008362CE /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		73CECA2725EE3154008362CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				73CECA2825EE316F008362CE /* DogModel.swift */,
+				73CECA2B25EE31B8008362CE /* OwnerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73CECA2E25EE3A5D008362CE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				73CECA2F25EE3A76008362CE /* DogData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,12 +218,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				73CEC9FE25EE15D0008362CE /* SailecFontModifier.swift in Sources */,
+				73CECA2C25EE31B8008362CE /* OwnerModel.swift in Sources */,
 				73CECA1C25EE1FE1008362CE /* HomeView.swift in Sources */,
 				73CEC9FB25EE1416008362CE /* Configs.swift in Sources */,
+				73CECA2125EE304E008362CE /* HomeViewModel.swift in Sources */,
 				73CEC9F525EE0B0A008362CE /* ColorExtension.swift in Sources */,
 				73CEC9E625EE0A8F008362CE /* ContentView.swift in Sources */,
 				73CEC9E425EE0A8F008362CE /* Wiggles_iOSApp.swift in Sources */,
+				73CECA2925EE316F008362CE /* DogModel.swift in Sources */,
 				73CEC9F825EE13BD008362CE /* Models.swift in Sources */,
+				73CECA3025EE3A76008362CE /* DogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
