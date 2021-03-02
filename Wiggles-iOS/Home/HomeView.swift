@@ -29,10 +29,10 @@ struct HomeView: View {
                         Text("Nearby results").modifier(SailecFont(.bold, size: 14))
                             .foregroundColor(Color.text_primary_color)
                             .padding(.top, 24).padding(.bottom, 8)
-                        ForEach(viewModel.dogsList) { object in
-                            NavigationLink(destination: HomeView(), label: {
-                                HomeListModelView(image: object.image, name: object.name, age: object.age,
-                                                  about: object.about, location: object.location, gender: object.gender)
+                        ForEach(viewModel.dogsList) { model in
+                            NavigationLink(destination: DetailsView(model: model), label: {
+                                HomeListModelView(image: model.image, name: model.name, age: model.age,
+                                                  about: model.about, location: model.location, gender: model.gender).padding(.bottom, 4)
                             })
                         }
                     }
@@ -60,7 +60,7 @@ struct HomeListModelView: View {
                 Text(name).lineLimit(1).modifier(SailecFont(.medium, size: 20)).foregroundColor(Color.text_primary_color)
                 Text("\(age) yrs | \(about)").lineLimit(1).modifier(SailecFont(.regular, size: 14)).foregroundColor(Color.text_primary_color)
                 HStack(alignment: .center, spacing: 2) {
-                    Image(IMAGE_LOC_ICON).resizable().frame(width: 24, height: 24)
+                    Image(IMAGE_LOC_ICON).resizable().frame(width: 20, height: 20)
                     Text("\(location) away").modifier(SailecFont(.regular, size: 14))
                         .foregroundColor(Color.text_primary_color).padding(.top, 2)
                 }
