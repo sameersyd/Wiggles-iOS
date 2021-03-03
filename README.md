@@ -1,4 +1,4 @@
-![GitHub Cards Preview](https://github.com/sameersyd/Wiggles-iOS/blob/main/art/cover_image.png?raw=true)
+![GitHub Cards Preview](https://github.com/sameersyd/Wiggles-iOS/blob/main/art/GITHUB-COVER.png?raw=true)
 
 # Wiggles 🐶
 Beautiful Puppy adoption app built to Demonstrate the use of SwiftUI and MVVM Architecture 🏗. *Made with love ❤️ by [Sameer Nawaz](https://github.com/sameersyd)*
@@ -7,7 +7,7 @@ Beautiful Puppy adoption app built to Demonstrate the use of SwiftUI and MVVM Ar
 
 ## UI Design 🎨
 
-The UI/UX for this Wiggles App was designed by <a href="https://github.com/Spikeysanju">@Spikeysanju</a>
+The `UI/UX` & `README.md` structure for this Wiggles App was designed by <a href="https://github.com/Spikeysanju">@Spikeysanju</a>
 
 ***Click to View Wiggles app Design from below 👇***
 
