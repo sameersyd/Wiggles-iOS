@@ -19,9 +19,11 @@ let IMAGE_MSG_ICON = "msg_icon"
 
 // OWNER IMAGE
 let OWNER_IMAGE = "owner_image"
+let OWNER_IMAGE2 = "owner_image2"
 
 // DOGS_IMAGES
 let DOG_IMAGE_BLUE = "dog_blue"
+let DOG_IMAGE_GARDEN = "dog_garden"
 let DOG_IMAGE_ORANGE = "dog_orange"
 let DOG_IMAGE_RED = "dog_red"
 let DOG_IMAGE_WHITE = "dog_white"
